@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
+
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+
+.dog {
+    background-color: #fdb44e;
+    height: 75px;
+    width: 120px;
+    position: absolute;
+    object-position: center;
+    left: 65%;
+    border-radius: 0px 0px 0px 120px;
+}
+
+.body {
+    background-color: #fdb44e;
+    height: 100px;
+    width: 180px;
+    position: relative;
+    top:55px;
+    left:70px;
+    border-radius:  0px 0px 0px 60px;
+}
+
+.leg1, .leg2, .leg3, .leg4 {
+    background-color: #fdb44e;
+    height: 50px;
+    width: 18px;
+    position: relative;
+}
+
+.leg1 {
+    left:100px;
+    top:48px;
+}
+
+.leg2 {
+    left:130px;
+    top:2px;
+}
+
+.leg3 {
+    left: 205px;
+    top: -50px;
+    background-color: rgba(151,89,2,0.5);
+}
+
+.leg4 {
+    left: 232px;
+    bottom: 100px;
+}
+
+.tail {
+    width:0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid #fdb44e;
+    position: relative;
+    bottom: 320px;
+    left: 230px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    animation: wag 1s infinite;
+}
+
+@keyframes wag {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.ear {
+    background-color: rgb(151, 89, 2, 0.8);
+    width: 45px;
+    height: 90px;
+    border-radius: 0px 0px 100px 100px;
+    position: relative; 
+    left: 75px;
+    bottom: 400px;
+}
+
+.nose {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: 2.5px;
+    bottom: 492px;
+}
+
+.eye {
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 490px;
+    left:50px;
+}
+
+.tongue {
+    background-color: tomato;
+    height: 22px;
+    width: 8px;
+    border-radius: 10px;
+    position: relative;
+    left: 23px;
+    bottom: 470px;
+    transform: rotate(45deg);
+    animation: move 1s infinite;
+    z-index: 0;
+}
+
+@keyframes move {
+50% {
+    transform: rotate(45deg)translateY(2.5px);
+}
+}
+
+
+.about {
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    color: rgb(77, 51, 25);
+    display: flex;
+    flex: center; 
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.nav_icon {
+    margin: 0 3rem;
+    font-size: 2rem;
+    display: inline-block;
+    display: flex;
+    flex: center; 
+    align-items: center;
+    justify-content: center;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	position: relative;
+}
+
+	
+
+button {
+    border:none;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    outline: none;
+}
+
+#play_pause {
+  background-image:url(/src/css/pause.png);
+}
+
+
+h1 {
+  cursor: default;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+h1 span {
+ font-family: monospace;
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.6s ease infinite alternate;
+  font-size: 50px;
+  color: var(--purple-color);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}

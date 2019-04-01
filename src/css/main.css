@@ -1,0 +1,16 @@
+
+
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+html, body, ul, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+}

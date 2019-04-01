@@ -1,0 +1,41 @@
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+  
+li {
+    display: flex;
+
+
+}
+
+section {
+    padding: 1em;
+    justify-content: flex-start;
+    background-color: #BCABAE;
+    
+}
+
+p {
+    color: var(--beige-color);
+    margin-right: 2em;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+    background-color: #713E5A;
+    border: 1px solid var(--light-color);
+    border-radius: 8px;
+}
+
+.fav_item {
+padding: 16px 32 px;
+justify-content: flex-start;
+display: flex;
+border-bottom: 2px solid white;
+}

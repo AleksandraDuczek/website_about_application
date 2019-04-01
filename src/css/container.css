@@ -1,0 +1,40 @@
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+
+@media screen and (min-width: 850px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+.container {
+max-width: 1400;
+margin: 0 auto 0 auto;
+background: var(--white-color);
+}
+
+
+.container--card {
+padding: 20px;
+box-sizing: border-box;
+margin-bottom: 20px;
+flex-basis: 20%;    
+}
+
+.container--image {
+height: 200px;
+width: 200px;
+}
+
+h4 {
+    color: var(--purple-color);
+}

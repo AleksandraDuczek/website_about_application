@@ -1,0 +1,55 @@
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+
+.app_store {
+    padding: 48px;
+    display:flex;
+    flex-wrap: wrap;
+    background: var(--light-color);
+}
+
+.app_wrapper {
+    margin: 24px 38px; 
+    width: 300px;
+    box-sizing: border-box;
+    flex-basis: calc(-50%-16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--beige-color);
+    color: var(--purple-color);
+    padding: 16px;
+    box-shadow: 0 10px 20px var(--light-color), 0 6px 6px rgba(0,0,0,23);
+    justify-content: space-around;
+}
+
+.like_button {
+    font-size: 2rem;
+    padding: 8px 32px;
+    border: none;
+    color: var(--beige-color);
+    background-color: var(--light-color);
+}
+
+.app_poster {
+    width: 80%;
+    max-width: 160px;
+    object-fit: contain;
+    margin: 38px;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 750px) {
+    .app_wrapper {
+        flex-basis: calc(100%-16px);
+    }
+}

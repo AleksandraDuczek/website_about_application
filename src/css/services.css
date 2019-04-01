@@ -1,0 +1,73 @@
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+
+.services {
+    background-color: var(--white-color);
+    padding: 72px 24px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 850 px) {
+    .services--list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    }
+}
+
+.services--list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px;
+}
+
+.services--card {
+    background-color:var(--light-color);
+    padding: 32px 16px;
+    box-shadow: 17px -12px 40px 1px rgba(105,93,104,1);
+    align-items: center;
+}
+
+.images--size{
+    height: 100px;
+    width: 100px;
+}
+
+.headphones {
+    height:20%;
+    width:20px;
+
+}
+
+.serv {
+    display: flex;
+    text-align: center;
+}
+
+.title {
+    color: var(--purple-color);
+    border-bottom: 4px var(--main-dark-color) solid;
+    padding-bottom: 16px;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center; 
+    justify-content: space-around;
+    margin: 18px;
+
+}
+
+.space {
+    padding: 0 22px;
+}
+
+
+
