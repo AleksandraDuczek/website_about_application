@@ -31,7 +31,7 @@
         "id": "4",
         "name": "Instagram",
         "category": "photo & video",
-        "icon": "https://www.edigitalagency.com.au/wp-content/uploads/maps-instagram-logo-png-transparent.png",
+        "icon": "https://www.edigitalagency.com.au/wp-content/uploads/new-instagram-logo-png-transparent.png",
         "age": "12",
         "size": "86,7 MB"
       },

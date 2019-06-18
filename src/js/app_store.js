@@ -18,16 +18,10 @@ const createPoster = (icon) => {
 
 const createFavoriteButton = (onClickFn) => {
     const button = document.createElement('button')
-    button.textContent="Like"
+    button.textContent = "like"
     button.classList.add('like_button')
     button.onclick = onClickFn;
     return button;
-  }
-
-  const changeTitleButton = (onClickFn) => {
-    button = document.getElementByClassName("like_button");
-    if (button.textContent=="Like") button.textContent=="You like it";
-    else button.textContent=="Like";
   }
 
 
