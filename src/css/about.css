@@ -11,17 +11,31 @@
 
 
 .dog {
-    background-color: #fdb44e;
+    background-color: transparent;
     height: 75px;
     width: 120px;
     position: absolute;
     object-position: center;
     left: 65%;
     border-radius: 0px 0px 0px 120px;
+ 
+}
+
+.dog-face {
+    background-color: rgb(128,128,128);
+    height: 75px;
+    width: 120px;
+    position: absolute;
+    object-position: center;
+    left: 0;
+    border-radius: 0px 0px 0px 120px;
+    z-index: 2;
+ 
 }
 
 .body {
-    background-color: #fdb44e;
+  z-index: 2;
+    background-color:rgb(128,128,128);
     height: 100px;
     width: 180px;
     position: relative;
@@ -30,8 +44,9 @@
     border-radius:  0px 0px 0px 60px;
 }
 
+
 .leg1, .leg2, .leg3, .leg4 {
-    background-color: #fdb44e;
+    background-color: rgb(128,128,128);
     height: 50px;
     width: 18px;
     position: relative;
@@ -50,7 +65,7 @@
 .leg3 {
     left: 205px;
     top: -50px;
-    background-color: rgba(151,89,2,0.5);
+    background-color:rgb(105,105,105);
 }
 
 .leg4 {
@@ -63,7 +78,7 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 100px solid #fdb44e;
+    border-bottom: 100px solid rgb(128,128,128);
     position: relative;
     bottom: 320px;
     left: 230px;
@@ -79,13 +94,14 @@
 }
 
 .ear {
-    background-color: rgb(151, 89, 2, 0.8);
+    background-color: rgb(105,105,105);
     width: 45px;
     height: 90px;
     border-radius: 0px 0px 100px 100px;
     position: relative; 
     left: 75px;
     bottom: 400px;
+    z-index: 3;
 }
 
 .nose {
@@ -96,6 +112,7 @@
     position: relative;
     right: 2.5px;
     bottom: 492px;
+    z-index: 3;
 }
 
 .eye {
@@ -106,10 +123,11 @@
     position: relative;
     bottom: 490px;
     left:50px;
+  z-index: 3;
 }
 
 .tongue {
-    background-color: tomato;
+    background-color: var(--purple-color);
     height: 22px;
     width: 8px;
     border-radius: 10px;
@@ -138,7 +156,7 @@
     justify-content: center;
     padding: 2rem;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
-    background: white;
+    background: var(--light-color);
 }
 
 .nav_icon {
@@ -164,10 +182,14 @@ button {
 }
 
 #play_pause {
-  background-image:url(/src/css/pause.png);
+  background-image:url(/src/css/play.png);
+  background-color: transparent;
 }
 
 
+
+
+/* JUMP */
 h1 {
   cursor: default;
   top: 0;

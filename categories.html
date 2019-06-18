@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Application</title>
     <link rel="shortcut icon" type="image/png" href="https://png.pngtree.com/svg/20170228/d9436d289e.png">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100|Yanone+Kaffeesatz:200" rel="stylesheet">
     <link rel="stylesheet" href ="src/css/navigation.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/hero.css">
     <link rel="stylesheet" href="src/css/services.css">
     <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/carousel.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 <body>
 
     <nav class="navigation">
-        <img class="logo" src="http://www.pngweb.co/png/wp-content/uploads/2017/09/slider-2-mockup-app-1.png" alt="logo">
-        <ul class="navigation-links"> 
-            <li class="link-wrapper"> <a href="/index.html">  Home </a></li>
-            <li class="link-wrapper"> <a href="/about.html">  About </li>
-            <li class="link-wrapper"> <a href="/best10.html">  Best 10 </li>
-            <li class="link-wrapper"> <a href="/index.html"> New </li>
-            <li class="link-wrapper"> <a href="/categories.html"> Categories</li>
-            <li class="link-wrapper"> <a href="/app_store.html"> App store </a></li>
-        </ul>
+       
+       <ul class="navigation-links"> 
+                  <li class="link-wrapper"> <a href="/index.html"  style="text-decoration: none">  Home </a>  </li>
+                  <li class="link-wrapper"> <a href="/about.html"  style="text-decoration: none">  About </a> </li>
+                  <li class="link-wrapper"> <a href="/best5_title.html" style="text-decoration: none"  >  Best 5 </a></li>
+                  <li class="link-wrapper"> <a href="/maps.html" style="text-decoration: none"  > maps </a></li>
+                  <li class="link-wrapper"> <a> Categories</a></li>
+                  <li class="link-wrapper"> <a href="/app_store.html" style="text-decoration: none"  > App store </a></li>
+                  <li class="link-wrapper"> <a href="/library.html" style="text-decoration: none"  > Library  </a></li>
+                </ul>
+              </nav>
+
+
         <!--- THIS IS MENU TOGGLE -->
         <div class="menu">
             <input type="checkbox" class="menu-toggle">
@@ -33,51 +42,160 @@
             <span class="menu--hamburger-bar"> </span>
 
             <ul class="navigation--hidden-menu">
-                <li class="navigation--link"> <a href="/index.html"  style="text-decoration: none"  >  Home </a></li>
-                <li class="navigation--link"> <a href="/about.html" style="text-decoration: none"  >  About </li>
-                <li class="navigation--link"> <a href="/best10.html" style="text-decoration: none"  >  Best 10 </li>
-                <li class="navigation--link"> <a href="/index.html" style="text-decoration: none"  > New </li>
-                <li class="navigation--link"> <a href="/categories.html" style="text-decoration: none"  > Categories</li>
-                <li class="navigation--link"> <a href="/app_store.html" style="text-decoration: none"  > App store </a></li>
-                <li class="link-wrapper"> <a href="/library.html" style="text-decoration: none"  > Library  </a></li>
-            </ul>
-            
+                <li class="navigation--link"> Home </li>
+                <li class="navigation--link"><a href="about.html" style="text-decoration: none"  >  About </a></li>
+                <li class="navigation--link"><a href="best5_title.html" style="text-decoration: none"  >  Best 5 </a></li>
+                <li class="navigation--link"><a href="maps.html" style="text-decoration: none"  > maps </a></li>
+                <li class="navigation--link"><a> Categories</a></li>
+                <li class="navigation--link"><a href="app_store.html" style="text-decoration: none"  > App store </a></li>
+                <li class="navigation--link"> <a href="/library.html" style="text-decoration: none"  > Library  </a></li>
+              
+            </ul> 
         </div>
     </nav>
 
-    
-    <nav class="categories">
-            <img class="logo_categories" src="http://www.pngweb.co/png/wp-content/uploads/2017/09/slider-2-mockup-app-1.png" alt="logo">
-            <ul class="navigation-categories"> 
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  >  Games </a></li>
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  >  App for entertainment </li>
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  >  App for health </li>
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  > App for music</li>
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  > App for movies</li>
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  > App for security </a></li>
-                <li class="categories-wrapper"> <a href="/.html" style="text-decoration: none"  > App for self improvement</a></li>
-                <li class="link-wrapper"> <a href="/library.html" style="text-decoration: none"  > Library  </a></li>
-            </ul>
-    
+            <div id="carousel">
 
-    <footer class="footer">
-        <ul class="icon--list">
-          <li> <span class="icon--wrapper"> 
-              <i class="fab fa-twitter"> </i>
-          </span> </li>
-          <li> <span class="icon--wrapper"> 
-                <i class="fab fa-snapchat"> </i>
-          </span></li>
-          <li> <span class="icon--wrapper">
-                <i class="fab fa-facebook"> </i> </span></li>
-          <li> <span class="icon--wrapper"> 
-                <i class="fab fa-instagram"> </i>
-          </span></li>
+                    <div class="hideLeft"> 
+                     <a href="#description--1"> <img src="/1.jpg">  </a>
+                   </div>
+             
+                   <div class="prevLeftSecond">
+                      <a href="#description--2"> <img src="/2.jpg">  </a>
+                   </div>
+             
+                   <div class="prev">
+                      <a href="#description--3"> <img src="/3.jpg">  </a>
+                   </div>
+             
+                   <div class="selected">
+                    <a href="#description--4"> <img src="/4.jpg">  </a>
+                   </div>
+             
+                   <div class="next">
+                      <a href="#description--5"> <img src="/5.jpg">  </a>
+                   </div>
+             
+                   <div class="nextRightSecond">
+                      <a href="#description--6"> <img src="/6.jpg">  </a>
+                   </div>
+             
+                   <div class="hideRight">
+                      <a href="#description--7"> <img src="/7.jpg">  </a>
+                   </div>
+             
+                 </div>
+             
+                 <div class="buttons">
+                   <button id="prev">Prev</button>
+                   <button id="next">Next</button>
+                   <br/> <br/> <br/>
+                 </div>
+
+                 <div class="description">
+                   
+                 <p class="description--1" id="description--1">
+                KFC - Thanks to the KFC application, you can choose your KFC restaurants, 
+                create an order, pay with the Paypal system, receive an order for 
+                the chosen address without waiting in the queue. <br/> <br/>
+
+                McDonald's -  With the McDonald's app you can see what is currently on the menu, 
+                product prices and promotions. You can find your McDonald's 
+                restaurants on the map. The application has nutritional information about products. <br/> <br/>
+                 </p>
+                 <a href="#carousel"> <img class="icon_back" src='/back.png'> </img> </a> 
+                 <p class="description--2" id="description--2">
+                    Minecraft - Explore infinite worlds and build everything from the simplest 
+                    of homes to the grandest of castles. Play in creative mode with unlimited 
+                    resources or mine deep into the world in survival mode, crafting weapons 
+                    and armor to fend off dangerous mobs. Create, explore and survive alone or
+                     play with friends on all different devices. <br/> <br/>
     
-        </ul>
-    <p> 🦄 Created by Aleksandra D. ™️ </p>
-    </footer>
-    <script type="module" src='assets/data.js'> </script>
-    <script type="module" src='src/js/app_store.js'></script>
+                   The Sims - Be creative inventive, giving Sims a unique look and unique 
+                   personality traits, and a livelier, choosing outfits and hairstyles. 
+                   Easily build a dream home for your Sims and design the perfect interior 
+                   and decor in a mobile game of unprecedented detail. Experience moving 
+                   and funny moments with your Sims: achieve your career goals, develop your
+                    hobby, strengthen relationships and improve your quality of life. Party 
+                    with friends, socialize in the city, take part in events and distribute 
+                    stickers to your favorite Sims. <br/> <br/>
+                  </p>
+                   <a href="#carousel"> <img class="icon_back" src='/back.png'> </img> </a> 
+                  <p class="description--3" id="description--3">
+                   Endomondo - Get the most out of your runs, walks, rides 
+                   and other workouts with our top-rated fitness tracking and personal 
+                   training app. Track your workouts using GPS, analyze your stats, 
+                   reach your fitness goals, and be part of our global community of millions 
+                   of fitness enthusiasts and athletes. <br/> <br/>
+                  
+                   Mi Fit - can track your exercises and analyze your sleep & activity data. 
+                   It keeps you motivated while exercising, helps to build healthy lifestyle 
+                   and makes a better you. <br/> <br/>
+                  </p>
+                  <a href="#carousel"> <img class="icon_back" src='/back.png'> </img> </a> 
+                  <p class="description--4" id="description--4">
+                      YouTube - Make watching your favorite videos easier with the YouTube app. 
+                      Explore brand new content, music, news and more with the official 
+                      YouTube app for iPhone and iPad. Discover even more with the official 
+                      YouTube app. Subscribe to channels with your favorite content, share 
+                      them with friends or upload your very own videos for everyone to see.
+                      Get more out of your video streaming app and discover even more with YouTube.<br/> <br/>
+                     
+                      Netflix - is ​​one of the most popular websites in the world that allows you to watch movies, 
+                      series and programs on your favorite device. Download free app to access thousands of movies, 
+                      series and programs on your Android TV device.  <br/> <br/>
+                     </p>
+                     <a href="#carousel"> <img class="icon_back" src='/back.png'> </img> </a> 
+                     <p class="description--5" id="description--5">
+                        Instagram is a simple way to capture and share the world’s moments.
+                         Follow your friends and family to see what they’re up to, 
+                         and discover accounts from all over the world that are sharing 
+                         things you love. Join the community of over 1 billion people 
+                         and express yourself by sharing all the moments of your day 
+                         — the highlights and everything in between, too.<br/> <br/>
+
+                        Facebook - Keeping up with friends is faster than ever: 
+                        See what friends are up to, share updates, photos and video, 
+                        get notified when friends like and comment on your posts, 
+                        watch and interact with live video, play games and use your favorite apps,
+                        buy and sell locally on Facebook Marketplace  <br/> <br/>
+                       </p>
+                       <a href="#carousel"> <img class="icon_back" src='/back.png'> </img> </a> 
+                       <p class="description--6" id="description--6">
+                          Quiz - is an intelligent, colorful and fun social game 
+                          in which you can challenge your friends and random opponents. 
+                          Play a quiz that is full of curiosities and learn a lot of amazing new facts! <br/> <br/>
+  
+                          Ted - Satisfy your curiosity and broaden your horizons with TED lectures. 
+                          See over 2,000 TED lectures delivered by amazing people. 
+                          Browse them by subject and mood - from technical-scientific 
+                          lectures to surprising lectures on human psychology.   <br/> <br/>
+                         </p>
+                         <a href="#carousel"> <img class="icon_back" src='/back.png'> </img> </a> 
+                         <p class="description--7" id="description--7">
+                            All Events in City - Discover upcoming local events and outdoor 
+                            activities in your city and nearby places and get interesting 
+                            event recommendation. Find events your friends are attending 
+                            and follow them to stay updated on their activities. Everyday find 
+                            some new things to do near you be it a yoga workshop, free art classes, 
+                            business seminar or a live music concert. <br/> <br/>
+    
+                            Facebook Local - Find out what's happening in your area, 
+                            wherever you are - regardless of whether you're looking for an idea 
+                            to spend time with your friends this weekend or want to see new places.
+                            Track the latest activity, events and places that your friends interact with, 
+                            and receive updates from the organizers of the events and pages you follow.    <br/> <br/>
+                           </p>
+
+                       </p>
+
+                  
+
+                
+
+                 </div> 
+            
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="module" src='/src/js/carousel.js'> </script>
 </body>
 </html>

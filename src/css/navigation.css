@@ -9,16 +9,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-
-
 nav ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 nav ul li a {
   padding: 18px;
   font-family: 'Josefin Slab', serif;
-
   text-transform:uppercase;
   color: rgba(0, 35, 122, 0.5);
   font-size: 28px;
@@ -32,18 +29,14 @@ nav ul li a:hover {
   color: rgba(0, 35, 122, 0.7);
 }
 
-
-
 a {
 color: var(--purple-color);
 text-decoration: none; 
-
 }
 
 li {
     color: var(--purple-color); 
     text-decoration: none; 
-
 }
 
 .navigation {
@@ -61,15 +54,6 @@ li {
     list-style: none;
 }
 
-.logo {
-    height:  200px;
-    max-width: 100%;
-}
-.logo_app {
-    height:  120px;
-    max-width: 100%;
-    margin: 20px;
-}
 
 .link-wrapper {
     padding: 0 16px;
@@ -109,20 +93,29 @@ li {
 
 .navigation--hidden-menu {
     position: absolute;
-    width: 450px;
-    margin: -100px -50px 0 0;
-    padding: 50 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 220px;
+    height: 400px;
+    margin: -40px -40px 0 0;
+    padding: 60 px;
     background: linear-gradient(35deg, var(--beige-color) 0%, var(--light-color) 100%);
     list-style: none;
-    left: 40px;
-    top: 150px; 
-    text-align: left;
+    left: 0px;
+    top: 80px; 
+    text-align: center;
     transform: translate(1%, 3);
     transition: transform 2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
+a:hover {
+    color: var(--white-color);
+}
+
 .menu input:checked ~ .navigation--hidden-menu {
-    transform: translate(-50%, 0);
+    transform: translate(60%, 10%);
 }
 
 @media screen and (max-width: 880px)
@@ -133,8 +126,32 @@ li {
     .navigation-links {
         display: none;
     }
-
     .navigation {
         justify-content: space-between;
     }
+
+    .logo {
+        height:  0px;
+        width: 0px;
+    }
+    .logo_app {
+        height:  0px;
+        width: 0px;
+    }
+    
+}
+
+@media screen and (min-width: 880px)
+{
+
+    .logo {
+        height:  200px;
+        max-width: 100%;
+    }
+    .logo_app {
+        height:  120px;
+        max-width: 100%;
+        margin: 20px;
+    }
+    
 }

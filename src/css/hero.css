@@ -13,7 +13,6 @@
     --light-color: #BCABAE;
 }
 
-  
 
   .hero{  padding-top: 20px;
     padding-bottom: 20px;
@@ -28,7 +27,6 @@
     background-image: url("https://media.wired.com/photos/5b7b45a081d2b91bf5081cf0/191:100/pass/Technology-Ideas-586121588.jpg");
     height: 520px;
     width: 1040px;
-    background-repeat: no-repeat;
     background-size: cover;
     margin: 5% auto;
     padding:20px;
@@ -37,11 +35,9 @@
     font-family: 'Marck Script', cursive;
     font-size: 28px;
     box-shadow: 35px -25px 66px -3px rgba(255,255,255,1);
-
-
   }
   
-  .content h2{ font-size:19px;}
+  .content h2 {font-size:19px;}
   
   .hero--box{
     position: absolute;
@@ -160,14 +156,17 @@
 
   @media screen and (max-width: 880px) {
     .hero--box {
-        max-width: 880px; 
-        width: 40%;
-        font-size: 40%;
-
-       
+        display: none;
     }
     .hero--img {
-        max-width: 880px; 
-        width: 40%; 
+        display: none;
     }
+    .hero{  padding-top: 120px;
+      padding-bottom: 120px;
+      margin: 120px;
+    }
+
+    
 }
+
+

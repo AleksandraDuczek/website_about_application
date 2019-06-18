@@ -12,6 +12,7 @@
     display:flex;
     flex-wrap: wrap;
     background: var(--light-color);
+    justify-content: space-between;
 }
 
 .app_wrapper {
@@ -30,10 +31,17 @@
 }
 
 .like_button {
-    font-size: 2rem;
-    padding: 8px 32px;
-    border: none;
-    color: var(--beige-color);
+    background-color: var(--beige-color);
+    font-family: 'Josefin Slab', serif;
+    height: 100px;
+    width: 200px;
+    font-size: 40px;
+    color: var(--purple-color);
+    border: 5px solid var(--light-color);
+}
+
+.like_button:hover {
+    border: 5px solid var(--purple-color);
     background-color: var(--light-color);
 }
 

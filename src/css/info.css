@@ -1,0 +1,44 @@
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+
+
+.info--content {
+    background-image:url(/infogr.jpg);
+    height: 1205px;
+    width: 780px;
+    background-size: cover;
+    margin: 5% auto;
+    padding:20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+@media
+  (max-width: 800px) {
+    .info--content { 
+        height: 600px;
+        width: 400px;
+    } 
+   }
+
+.swing {
+    display: flex;
+    align-items: center;
+    float: center;
+    justify-content: center;
+    animation: swing ease-in-out 1s infinite alternate;
+    height: 1250px;
+    width: 2050px;
+    box-shadow: 10px 10px 68px 12px var(--light-color);
+    background-color: var(--light-color);
+}
+
+@keyframes swing {
+    0% { transform: rotate(2deg); }
+    100% { transform: rotate(-1deg); }
+}

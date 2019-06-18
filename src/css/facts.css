@@ -1,0 +1,23 @@
+:root {
+    --main-dark-color: #283044;
+    --white-color: #EEE4E1;
+    --purple-color: #713E5A;
+    --beige-color: #E7D8C9;
+    --light-color: #BCABAE;
+}
+  
+.facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.facts--title {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+}
+

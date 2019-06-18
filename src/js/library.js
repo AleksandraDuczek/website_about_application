@@ -10,9 +10,7 @@ const buildLibrary = () => {
         listItem.classList.add("fav_item");
         const name = document.createElement('p');
         name.textContent = tape.name;
-
             const button = document.createElement('button')
-            button.textContent = "dislike"
             button.classList.add('dislike_button')
             button.onclick = () => {
             removeTapesFromStorage(tape.id);

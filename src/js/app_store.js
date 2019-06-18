@@ -18,10 +18,16 @@ const createPoster = (icon) => {
 
 const createFavoriteButton = (onClickFn) => {
     const button = document.createElement('button')
-    button.textContent = "like"
+    button.textContent="Like"
     button.classList.add('like_button')
     button.onclick = onClickFn;
     return button;
+  }
+
+  const changeTitleButton = (onClickFn) => {
+    button = document.getElementByClassName("like_button");
+    if (button.textContent=="Like") button.textContent=="You like it";
+    else button.textContent=="Like";
   }
 
 
@@ -41,8 +47,6 @@ const appCardElements = appTapes.map(appTape=> {
     appWrapper.appendChild(createFavoriteButton(
         () => addTapeToStorage(appTape.id)
     ));
-
-
     return appWrapper;
 });
 
